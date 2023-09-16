@@ -1,6 +1,6 @@
 package Part2_JavaCore.Homework2;
 
-public class Hogwarts {
+public abstract class Hogwarts {
     private String name;
     private int spellPower;
     private int apparitionDistance;

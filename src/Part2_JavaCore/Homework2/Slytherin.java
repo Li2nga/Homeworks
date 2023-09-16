@@ -47,4 +47,19 @@ public class Slytherin extends Hogwarts{
                 ", leadership=" + leadership +
                 '}';
     }
+    public void studentСomparisonSlytherin(Slytherin slytherin) {
+
+        if (sumPoints() > slytherin.sumPoints()) {
+            System.out.println("Лучший ученик - " + getName());
+        } else if (sumPoints() == slytherin.sumPoints()) {
+            System.out.println("Силы учеников " + slytherin.getName() + " и " + getName() + " равны");
+        } else {
+            System.out.println("Лучший ученик - " + slytherin.getName());
+        }
+
+    }
+
+    private int sumPoints() {
+        return cunning + determination + ambition + resourcefulness + leadership;
+    }
 }

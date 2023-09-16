@@ -32,4 +32,21 @@ public class Hufflepuff extends Hogwarts {
                 ", fairPlay=" + fairPlay +
                 '}';
     }
+
+    public void studentСomparisonHufflepuff(Hufflepuff hufflepuff) {
+
+        if (sumPoints() > hufflepuff.sumPoints()) {
+            System.out.println("Лучший ученик - " + getName());
+        } else if (sumPoints() == hufflepuff.sumPoints()) {
+            System.out.println("Силы учеников " + hufflepuff.getName() + " и " + getName() + " равны");
+        } else {
+            System.out.println("Лучший ученик - " + hufflepuff.getName());
+        }
+
+    }
+
+    private int sumPoints() {
+        return hardWork + loyalty + fairPlay;
+    }
+
 }
