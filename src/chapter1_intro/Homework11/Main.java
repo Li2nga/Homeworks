@@ -7,17 +7,7 @@ public class Main {
         task3();
     }
 
-    public static int[] generateRandomArray() {
-        java.util.Random random = new java.util.Random();
-        int[] arr = new int[6];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(100_000) + 100_000;
-        }
-        return arr;
-    }
-
     public static void printIsLeapYear(int year) {
-
         int yearException = 400;
         int yearException2 = 100;
         int yearException3 = 4;
@@ -65,11 +55,9 @@ public class Main {
         return deliveryTime;
     }
 
-
     public static void task1() {
         System.out.println("Задача 1");
         printIsLeapYear(2021);
-
     }
 
     public static void task2() {
@@ -79,12 +67,11 @@ public class Main {
 
     public static void task3() {
         System.out.println("Задача 3");
-        int a=1000;
+        int a = 1000;
         if (printNumberDeliveryDays(a) == -1) {
             System.out.println("доставки нет");
         } else {
-
-            System.out.println("printNumberDeliveryDays("+a+") = " + printNumberDeliveryDays(a));
+            System.out.println("printNumberDeliveryDays(" + a + ") = " + printNumberDeliveryDays(a));
         }
     }
 }
