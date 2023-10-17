@@ -29,8 +29,6 @@ public class Main {
         System.out.println("------------------------------------------------");
         EmployeeService.outputConsoleFullNamesEmployees(staffBook);
 
-
-        //задача: проиндексеривать зп
         EmployeeService.salaryIndexation(staffBook, 10);
 
         System.out.println("------------------------------------------------");
@@ -56,7 +54,7 @@ public class Main {
 
             System.out.println("------------------------------------------------");
 
-            EmployeeService.printDepartmentEmployees(staffBook, 4);
+            EmployeeService.printDepartmentEmployees(staffBook, 2);
 
             System.out.println("------------------------------------------------");
 

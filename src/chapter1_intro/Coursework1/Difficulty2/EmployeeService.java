@@ -35,7 +35,6 @@ public class EmployeeService {
         return minimumWageЕmployees;
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////
     public static Employee[] maxWageЕmployees(Employee[] staffbook) {
         int maxSalary = Integer.MIN_VALUE;
         for (Employee employee : staffbook) {
@@ -61,9 +60,6 @@ public class EmployeeService {
         return maxWageЕmployees;
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////
-
-
     public static double averageSalary(Employee[] staffbook) {
         int amountSalaries = 0;
         int a = 0;
@@ -76,8 +72,6 @@ public class EmployeeService {
         return (double) amountSalaries / a;
     }
 
-    ///////////////////////////////////////////////////////////////////////////////////////
-
     public static void outputConsoleFullNamesEmployees(Employee[] staffbook) {
 
         for (int i = 0; i < staffbook.length; i++) {
@@ -87,7 +81,6 @@ public class EmployeeService {
         }
     }
 
-    ///////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void salaryIndexation(Employee[] staffbook, double indexationPercentage) {
 
         for (Employee employee : staffbook) {
@@ -98,7 +91,6 @@ public class EmployeeService {
         }
     }
 
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static Employee[] minimumWageDepartament(Employee[] staffbook, int department) {
         int minSalary = Integer.MAX_VALUE;
         for (Employee employee : staffbook) {
@@ -122,7 +114,6 @@ public class EmployeeService {
         }
         return minimumWageЕmployees;
     }
-
 
     public static Employee[] maxWageDepartament(Employee[] staffbook, int department) {
         int maxSalary = Integer.MIN_VALUE;
@@ -184,7 +175,7 @@ public class EmployeeService {
 
         for (int i = 0; i < staffbook.length; i++) {
             if (staffbook[i] != null && staffbook[i].getDepartment() == department) {
-                System.out.println(staffbook[i].getFullName() + ";" + staffbook[i].getSalary());
+                System.out.println(staffbook[i].getFullName() + ";" + staffbook[i].getSalary() + ";" + staffbook[i].getId());
             }
         }
     }
@@ -196,7 +187,6 @@ public class EmployeeService {
                 System.out.println(staffbook[i].getFullName() + ";" + staffbook[i].getSalary() + ";" + staffbook[i].getId());
             }
         }
-
     }
 
     public static void listEemployeesHigherSalary(Employee[] staffbook, int targetSalary) {
@@ -206,7 +196,5 @@ public class EmployeeService {
                 System.out.println(staffbook[i].getFullName() + ";" + staffbook[i].getSalary() + ";" + staffbook[i].getId());
             }
         }
-
     }
-
 }
