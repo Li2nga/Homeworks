@@ -2,7 +2,6 @@ package culcGroup.calculatorArtifact;
 
 import org.springframework.stereotype.Service;
 
-
 @Service
 public class CalculatorServiceImpl implements CalculatorService {
     @Override
@@ -29,12 +28,10 @@ public class CalculatorServiceImpl implements CalculatorService {
     public String divide(int num1, int num2) {
         if (num2 == 0) {
             return "Деление на ноль невозможно ";
-        } else{
+        } else {
             return num1 + "/" + num2 + "=" + ((double) num1 / (double) num2);
         }
-
     }
-
 }
 
 
